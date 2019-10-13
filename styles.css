@@ -44,6 +44,12 @@ li a:hover{
 .copy :first-child{
   font-size: 2rem;
 }
+.copy :last-child{
+  margin-left: .5rem
+}
+nav ul li :last-child{
+  margin-right:.5rem;
+}
 @media (max-width:500px){
 li{
   display: flex;
