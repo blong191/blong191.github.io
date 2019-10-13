@@ -1,17 +1,49 @@
 *{
   box-sizing: border-box;
 }
-/* side nav editing */
 body{
   position: relative;
+  background-color: #ab7513;
+}
+/* side nav editing */
+article{
+  margin-left: 9rem;
+}
+nav{
+  position: fixed;
+  top:0;
+  left:0;
+  width:8rem;
+  height: 100%;
+  background-color: #4c5769;
 }
 ul{
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top:0;
-  left:0;
+
 }
-article{
-  margin-left: 20%
+li{
+  list-style-type: none;
 }
+li a{
+  color: white;
+  text-decoration: none;
+}
+li a:hover{
+  text-decoration: underline;
+}
+/*icons*/
+.icon{
+  height: 2rem;
+}
+/*main page*/
+.home h2 a{
+  color:#4c5769;
+  font-size: 2rem;
+
+}
+.home h2{
+  margin: 0;
+  display: inline;
+}
+/*about me page*/
