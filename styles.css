@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
   margin:0;
+  padding:0;
 }
 body{
   position: relative;
@@ -9,7 +10,7 @@ body{
 }
 
 /*logo editing*/
-nav .dlogo {
+.dlogo {
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -17,6 +18,16 @@ nav .dlogo {
   width: auto;
   border: thin black solid;
   border-radius: 100%;
+  box-shadow: 2px 2px 0 red, 4px 4px 0 #3bc5e4,
+  -2px -2px 0 red, -4px -4px 0 #3bc5e4;
+  padding:4px;
+  margin: 1rem
+}
+.dlogo :first-child{
+  font-size: 3rem;
+  text-shadow:2px 2px 0 red, 4px 4px 0 #3bc5e4;
+  text-shadow: ;
+
 }
 
 /* side nav editing */
@@ -28,12 +39,11 @@ nav{
 nav ul{
   display: flex;
   justify-content: space-around;
-  margin: 0;
   padding-inline-start: 0;
 }
 li a{
-  color: white;
   text-decoration: none;
+  color:white;
 }
 li{
   list-style-type: none;
@@ -59,13 +69,13 @@ li{
 }
 @media (min-width:500px) {
 article{
-  margin-left: 9rem;
+  margin-left: 25%;
 }
 nav{
   position: fixed;
   top:0;
   left:0;
-  width:8rem;
+  width:20%;
   height: 100%;
 }
 ul{
@@ -76,10 +86,18 @@ li{
   border-top: thin black solid;
   font-size: 1.25rem;
   align-items: flex-end;
+  height: 5rem;
+}
+.icon img{
+width:4rem;
+height:4rem;
+}
+.copy{
+  border-bottom: thin solid black;
 }
 }
 /*icons*/
-.icon img{
+nav img{
   height: 2rem;
   filter: invert(100%);
 }
@@ -87,7 +105,6 @@ li{
 .home h2 a{
   color:orange;
   font-size: 2rem;
-
 }
 .home h2{
   margin: 0;
@@ -96,4 +113,66 @@ li{
 /*about me page*/
 .about h1{
   font-size: 3rem;
+  margin-top: 1rem;
+}
+.about p{
+  text-indent:3rem
+}
+.love img{
+  width:50%;
+}
+.loveimg{
+  display: flex;
+}
+.love{
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+.life img{
+width:50%;
+margin-left: 25%;
+}
+.life{
+  margin-bottom: 3rem;
+}
+.background img{
+  width:100%;
+  background-color: white;
+}
+@media (min-width:500px) {
+.about{
+  font-size: 1.5rem;
+}
+}
+/*skills page */
+.skills h1{
+  font-size: 3rem
+}
+.skills h3{
+  margin-top:1rem;
+  font-size: 2rem;
+}
+.skills img{
+  width: 100%
+}
+
+/*projects page*/
+.project .this{
+  display: flex;
+  flex-direction: column;
+}
+.project .pub a img{
+  background-color:white;
+}
+.dlogo{
+  color:white;
+  text-decoration: none;
+}
+@media (min-width:500px) {
+.project section p{
+  font-size: 1.5rem;
+}
+.project h2{
+  font-size: 2.5rem;
+}
 }
