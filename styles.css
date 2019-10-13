@@ -1,11 +1,57 @@
 *{
   box-sizing: border-box;
+  margin:0;
 }
 body{
   position: relative;
-  background-color: #ab7513;
+  background-color: #262c4c;
+  color: white
 }
+
+/*logo editing*/
+nav .dlogo {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  align-self: center;
+  width: auto;
+  border: thin black solid;
+  border-radius: 100%;
+}
+
 /* side nav editing */
+nav{
+  display: flex;
+  flex-direction:column;
+  background-color: #4c5769;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding-inline-start: 0;
+}
+li a{
+  color: white;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+li a:hover{
+  text-decoration: underline;
+}
+.copy :first-child{
+  font-size: 2rem;
+}
+@media (max-width:500px){
+li{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+}
+@media (min-width:500px) {
 article{
   margin-left: 9rem;
 }
@@ -15,30 +61,25 @@ nav{
   left:0;
   width:8rem;
   height: 100%;
-  background-color: #4c5769;
 }
 ul{
-  display: flex;
   flex-direction: column;
-
 }
 li{
-  list-style-type: none;
+  display: flex;
+  border-top: thin black solid;
+  font-size: 1.25rem;
+  align-items: flex-end;
 }
-li a{
-  color: white;
-  text-decoration: none;
-}
-li a:hover{
-  text-decoration: underline;
 }
 /*icons*/
-.icon{
+.icon img{
   height: 2rem;
+  filter: invert(100%);
 }
 /*main page*/
 .home h2 a{
-  color:#4c5769;
+  color:orange;
   font-size: 2rem;
 
 }
@@ -47,3 +88,6 @@ li a:hover{
   display: inline;
 }
 /*about me page*/
+.about h1{
+  font-size: 3rem;
+}
